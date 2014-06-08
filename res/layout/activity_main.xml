@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_title"
+                android:textSize="46.0dip" />
+
+            <CheckBox
+                android:id="@+id/enabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENABLE"
+                android:checked="true"
+                android:textSize="20.0dip" />
+
+            <CheckBox
+                android:id="@+id/show_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show notification"
+                android:textSize="20.0dip" />
+
+            <Button
+                android:id="@+id/okie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="okie"
+                android:text="Save"
+                android:textSize="20.0dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
